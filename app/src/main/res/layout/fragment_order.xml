@@ -2,16 +2,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragmentos.OrderFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- TextView para mostrar el número de mesa en la esquina superior derecha -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name" />
+
     <TextView
-        android:id="@+id/text_view"
+        android:id="@+id/mesa_numero_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:layout_gravity="end|top"
+        android:layout_margin="16dp"
+        android:text="Mesa:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
 
 </RelativeLayout>

@@ -39,7 +39,7 @@ public class InicioActivity extends AppCompatActivity {
                     }
                 }
                 //llamar a la otra actividad
-                Intent sesion = new Intent(getApplicationContext(),MainActivity.class);
+                Intent sesion = new Intent(getApplicationContext(),SesionActivity.class);
                 startActivity(sesion);
             }
         });

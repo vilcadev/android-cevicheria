@@ -1,15 +1,21 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frame_ver_seleccionados">
 
-    <TableLayout
+        <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchColumns="1">
@@ -333,9 +339,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|end"
                         android:background="#A9A9A9"
-                        android:textColor="#FFFFFF"
                         android:padding="4dp"
-                        android:text="S/. 10.00" />
+                        android:text="S/. 10.00"
+                        android:textColor="#FFFFFF" />
                 </FrameLayout>
 
                 <TextView
@@ -385,4 +391,24 @@
 
     </TableLayout>
     </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame_ver_seleccionados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#35f04e"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/texto_seleccionados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Ver Seleccionados"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+    </RelativeLayout>
 </LinearLayout>

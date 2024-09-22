@@ -39,6 +39,6 @@
     <string name="mensajeCocina">Mensaje de impresión para la cocina</string>
     <string name="btnPrecuenta">Pre-cuenta</string>
     <string name="btnGuardar">Guardar</string>
-    <string name="remove_product_description">Eliminar producto</string>
+    <string name="btnEliminar">Eliminar producto</string>
 
 </resources>

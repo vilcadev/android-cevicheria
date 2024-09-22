@@ -81,7 +81,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/remove_product_description" />
+                android:contentDescription="@string/btnEliminar" />
         </LinearLayout>
 
         <LinearLayout
@@ -107,9 +107,12 @@
                 android:layout_marginEnd="8dp"/>
 
             <ImageButton
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/remove_product_description" />
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/btnEliminar" />
         </LinearLayout>
     </LinearLayout>
 

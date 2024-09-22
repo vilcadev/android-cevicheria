@@ -8,6 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
+import android.widget.Button;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.example.cevicheriaapp.R;
 
 /**
@@ -17,50 +21,49 @@ import com.example.cevicheriaapp.R;
  */
 public class CuentaFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private Button btnInformacionCuenta;
+    private Button btnRestablecerContrasena;
 
     public CuentaFragment() {
         // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CuentaFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CuentaFragment newInstance(String param1, String param2) {
-        CuentaFragment fragment = new CuentaFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cuenta, container, false);
+        View view = inflater.inflate(R.layout.fragment_cuenta, container, false);
+
+        // Encontrar los botones en el layout
+        btnInformacionCuenta = view.findViewById(R.id.btnInformacionCuenta);
+        btnRestablecerContrasena = view.findViewById(R.id.btnRestablecerContrasena);
+
+        // Configurar el listener para el botón de Información de la Cuenta
+        btnInformacionCuenta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Cargar el fragmento de InfoCuentaFragment
+                Fragment infoCuentaFragment = new InfoCuentaFragment();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, infoCuentaFragment); // Asegúrate de tener un contenedor para los fragmentos
+                transaction.addToBackStack(null); // Permite volver al fragmento anterior
+                transaction.commit();
+            }
+        });
+
+        // Configurar el listener para el botón de Restablecer Contraseña
+        btnRestablecerContrasena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Cargar el fragmento de ResetPasswordFragment
+                Fragment resetPasswordFragment = new ResetPasswordFragment();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, resetPasswordFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        return view;
     }
 }

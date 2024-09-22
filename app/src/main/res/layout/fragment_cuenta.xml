@@ -5,13 +5,32 @@
     android:layout_height="match_parent"
     tools:context=".fragmentos.CuentaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Botón para Información de la Cuenta -->
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/cuentaLblTitulo"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnInformacionCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cuenta Fragment"
-        android:textSize="30sp"
+        android:text="@string/btn_info"
         android:layout_centerInParent="true"
-        android:textColor="@color/black"/>
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Botón para Restablecer Contraseña, ubicado debajo del otro botón -->
+    <Button
+        android:id="@+id/btnRestablecerContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_rest"
+        android:layout_below="@id/btnInformacionCuenta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
 
 </RelativeLayout>

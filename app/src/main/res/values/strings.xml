@@ -17,4 +17,14 @@
     <string name="logTxtContrasena">Contraseña</string>
     <string name="logBtnIngresar">Ingresar</string>
 
+    <string name="btn_info">Información de la Cuenta</string>
+    <string name="btn_rest">Restablecer Contraseña</string>
+    <string name="cuentaLblTitulo">MI CUENTA</string>
+    <string name="volver">Volver</string>
+    <string name="volver2">Volver</string>
+    <string name="txtPassAct">Contraseña Actual</string>
+    <string name="txtNewPass">Contraseña Nueva</string>
+    <string name="txtConfNewPass">Confirmar nueva contraseña</string>
+    <string name="btnReset">Reestablecer contraseña</string>
+
 </resources>

@@ -5,6 +5,10 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +43,7 @@
                         android:background="#A9A9A9"
                         android:textColor="#FFFFFF"
                         android:padding="4dp"
-                        android:text="S/. 30.00" />
+                        android:text="S/. 29.00" />
                 </FrameLayout>
 
                 <TextView
@@ -63,7 +67,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/pescado" />
+                    android:src="@drawable/langosta" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -72,7 +76,7 @@
                     android:background="#A9A9A9"
                     android:textColor="#FFFFFF"
                     android:padding="4dp"
-                    android:text="S/. 30.00" />
+                    android:text="S/. 50.00" />
             </FrameLayout>
 
                 <TextView
@@ -103,7 +107,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/pescado" />
+                        android:src="@drawable/arrozmarisco" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -136,7 +140,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/pescado" />
+                        android:src="@drawable/ceviche" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -145,7 +149,7 @@
                         android:background="#A9A9A9"
                         android:textColor="#FFFFFF"
                         android:padding="4dp"
-                        android:text="S/. 30.00" />
+                        android:text="S/. 28.00" />
                 </FrameLayout>
 
                 <TextView
@@ -157,6 +161,7 @@
         </TableRow>
 
         <TableRow
+            android:layout_marginBottom="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
@@ -175,7 +180,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/pescado" />
+                        android:src="@drawable/triomarino" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -184,14 +189,14 @@
                         android:background="#A9A9A9"
                         android:textColor="#FFFFFF"
                         android:padding="4dp"
-                        android:text="S/. 30.00" />
+                        android:text="S/. 36.00" />
                 </FrameLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Leche de tigre" />
+                    android:text="Trio Marino" />
             </LinearLayout>
 
             <LinearLayout
@@ -208,7 +213,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/pescado" />
+                        android:src="@drawable/duomarino" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -224,9 +229,160 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Chicharron" />
+                    android:text="Duo Marino" />
             </LinearLayout>
         </TableRow>
 
+        <TableRow
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/chicharronpota" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:background="#A9A9A9"
+                        android:textColor="#FFFFFF"
+                        android:padding="4dp"
+                        android:text="S/. 15.00" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Chicharron Pota" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/chichajora" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:background="#A9A9A9"
+                        android:textColor="#FFFFFF"
+                        android:padding="4dp"
+                        android:text="S/. 12.00" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="chicha de jora" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/incakola" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:background="#A9A9A9"
+                        android:textColor="#FFFFFF"
+                        android:padding="4dp"
+                        android:text="S/. 10.00" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Inca kola" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/coacola" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:background="#A9A9A9"
+                        android:textColor="#FFFFFF"
+                        android:padding="4dp"
+                        android:text="S/. 5.00" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Coca cola" />
+            </LinearLayout>
+        </TableRow>
+
+
+
+
+
     </TableLayout>
+    </ScrollView>
 </LinearLayout>

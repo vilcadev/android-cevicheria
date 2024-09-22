@@ -1,5 +1,7 @@
 package com.example.cevicheriaapp.actividades;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -53,6 +55,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DeliveryFragment()).commit();
         } else if (id == R.id.nav_cuenta) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CuentaFragment()).commit();
+        }
+        else if (id == R.id.out_logout){
+            // Limpiar SharedPreferences al cerrar sesión
+            SharedPreferences sharedPreferences = getSharedPreferences("Sesion", MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.clear(); // Limpiar todas las preferencias
+            editor.apply(); // Aplicar cambios
+
+            // Redirigir al usuario a la pantalla de inicio de sesión
+            Intent intent = new Intent(this, SesionActivity.class);
+            startActivity(intent);
+            finish(); // Finalizar la actividad actual para que no pueda volver atrás
+
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

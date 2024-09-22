@@ -1,10 +1,14 @@
 package com.example.cevicheriaapp.fragmentos;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -50,10 +54,27 @@ public class OrderFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Obtener el TextView de la interfaz
         TextView mesaNumeroTextView = view.findViewById(R.id.tableNumber);
-
-        // Mostrar el número de mesa en el TextView
         mesaNumeroTextView.setText("Mesa: " + mesaNumero);
+
+        Button buscarButton = view.findViewById(R.id.searchProduct);
+        buscarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                botonBuscarProductoPress(v);
+            }
+        });
     }
+
+
+    public void botonBuscarProductoPress(View view) {
+        BuscarProducto buscarProductoFragment = new BuscarProducto();
+        requireActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, buscarProductoFragment)
+                .addToBackStack(null)
+                .commit();
+    }
+
+
+
 }

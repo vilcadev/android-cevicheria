@@ -27,4 +27,18 @@
     <string name="txtConfNewPass">Confirmar nueva contraseña</string>
     <string name="btnReset">Reestablecer contraseña</string>
 
+    <string name="descripcionUsuario">Descripción del perfil del usuario</string>
+    <string name="usuarioM">Omar Diaz</string>
+    <string name="numeroMesa">MESA </string>
+    <string name="btnBuscarProducto">Buscar Producto</string>
+    <string name="bebidaInca">Inca Kola</string>
+    <string name="precioInca">S/ 30.00</string>
+    <string name="platoCevi">Ceviche</string>
+    <string name="precioCevi">S/ 20.00</string>
+    <string name="cuentaTotal">Total: S/ 50.00</string>
+    <string name="mensajeCocina">Mensaje de impresión para la cocina</string>
+    <string name="btnPrecuenta">Pre-cuenta</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="remove_product_description">Eliminar producto</string>
+
 </resources>

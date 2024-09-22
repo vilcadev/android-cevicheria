@@ -51,7 +51,7 @@ public class OrderFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // Obtener el TextView de la interfaz
-        TextView mesaNumeroTextView = view.findViewById(R.id.mesa_numero_text);
+        TextView mesaNumeroTextView = view.findViewById(R.id.tableNumber);
 
         // Mostrar el número de mesa en el TextView
         mesaNumeroTextView.setText("Mesa: " + mesaNumero);

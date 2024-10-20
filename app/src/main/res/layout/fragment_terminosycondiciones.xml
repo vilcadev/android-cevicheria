@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".fragmentos.CuentaFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Términos y Condiciones"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!-- Contenedor para el texto de los términos y condiciones -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:text="Aceptación de TérminosAl registrarte como personal del restaurante la Chinitita , aceptas cumplir con estos términos y condiciones
+
+Información PersonalProporcionar información precisa y actualizada es obligatorio. Cualquier información falsa o engañosa puede resultar en la terminación de tu registro.
+
+Uso de la Cuenta La cuenta creada es exclusivamente para uso del personal autorizado. No se permite compartir tu acceso con terceros.
+
+Responsabilidades del PersonalEl personal es responsable de cumplir con las políticas y procedimientos del restaurante, así como de mantener la confidencialidad de la información interna.
+
+Modificación de TérminosLa Cevicheria la Chinita se reserva el derecho de modificar estos términos en cualquier momento. Se notificará a los usuarios sobre cualquier cambio significativo.
+
+Derechos de Propiedad IntelectualTodo contenido, marcas y materiales proporcionados en la plataforma son propiedad de la Cevicheria la Chinita y no pueden ser utilizados sin autorización.
+
+Aceptación de Políticas de PrivacidadAl registrarte, aceptas la Política de Privacidad de la Cevicheria la Chinita, que detalla cómo se maneja tu información personal.
+
+Terminación de la CuentaLa Cevicheria la Chinita se reserva el derecho de cancelar o suspender cualquier cuenta que no cumpla con estos términos.
+
+ContactoPara cualquier consulta sobre estos términos, contacta a chinita21@gmail.com." />
+    </ScrollView>
+
+</LinearLayout>

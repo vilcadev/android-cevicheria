@@ -43,4 +43,7 @@
 
     <string name="deliveryLblTitulo">Delivery</string>
 
+    <string name="configuracionTitulo">Configuración</string>
+
+
 </resources>

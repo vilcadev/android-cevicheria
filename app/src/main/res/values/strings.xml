@@ -41,4 +41,6 @@
     <string name="btnGuardar">Guardar</string>
     <string name="btnEliminar">Eliminar producto</string>
 
+    <string name="deliveryLblTitulo">Delivery</string>
+
 </resources>

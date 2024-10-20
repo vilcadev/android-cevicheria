@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutTerminosCondiciones"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -19,15 +20,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="50dp">
+        android:layout_weight="1">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:textSize="16sp"
             android:text="Aceptación de TérminosAl registrarte como personal del restaurante la Chinitita , aceptas cumplir con estos términos y condiciones
 
 Información PersonalProporcionar información precisa y actualizada es obligatorio. Cualquier información falsa o engañosa puede resultar en la terminación de tu registro.
@@ -44,7 +44,8 @@ Aceptación de Políticas de PrivacidadAl registrarte, aceptas la Política de 
 
 Terminación de la CuentaLa Cevicheria la Chinita se reserva el derecho de cancelar o suspender cualquier cuenta que no cumpla con estos términos.
 
-ContactoPara cualquier consulta sobre estos términos, contacta a chinita21@gmail.com." />
+ContactoPara cualquier consulta sobre estos términos, contacta a chinita21@gmail.com."
+            android:textSize="16sp" />
     </ScrollView>
 
 </LinearLayout>
